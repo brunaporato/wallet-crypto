@@ -16,7 +16,10 @@
 
 body {
   background: #e5eaf1;
-  font-family: 'SFProDisplay-Semibold';
-
   padding: 2rem;
+}
+
+body, a, button {
+  font-family: 'SFProDisplay-Semibold';
+  -webkit-font-smoothing: antialiased;
 }

@@ -1,5 +1,6 @@
 import { ButtonCard } from '../../components/ButtonCard';
 import { CryptoCard } from '../../components/CyptoCard';
+import { Graph } from '../../components/Graph';
 import { Header } from '../../components/Header';
 import './styles.scss';
 
@@ -9,6 +10,7 @@ export function Home() {
       <Header title='Bitcoin Wallet'/>
       <main>
         <CryptoCard />
+        <Graph />
         <div className="buttons">
           <ButtonCard variant='buy' />
           <ButtonCard variant='sell' />

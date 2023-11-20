@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'SFProDisplay-Bold';
+  src: local('SFProDisplay'), url(./fonts/SFProDisplay/SF-Pro-Display-Bold.OTF) format('truetype');
+}
+
+.cryptocard-container {
+  background: white;
+  border-radius: 1rem;
+
+  padding: 1.5rem 1.5rem 0.5rem;
+
+  box-shadow: 0 3px 10px 0 rgba(154, 155, 176, 0.17);
+
+  span {
+    color: #aeb8c4;
+    text-transform: uppercase;
+  }
+
+  button {
+    background: none;
+    border: none;
+    width: 100%;
+
+    color: #aeb8c4;
+    cursor: pointer;
+
+    margin-top: 1rem;
+  }
+
+  .arrow-rotated {
+    transform: rotate(180deg);
+  }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1rem;
+
+  .currency {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #4c5968;
+  }
+  
+  
+
+  .icon {
+    background: linear-gradient(180deg, rgba(255, 200, 67, 1) 0% , rgba(255, 143, 23, 1) 100%);
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 50%;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-areas: 
+  'amount amount'
+  'crypto percent';
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.25rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: #4c5968;
+    grid-area: amount;
+  }
+
+  span {
+    font-size: 1.25rem;
+    grid-area: crypto;
+  }
+
+  .percent {
+    grid-area: percent;
+    background: #ee225d;
+    width: fit-content;
+    padding: 0 0.5rem;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    color: white;
+  }
+
+}

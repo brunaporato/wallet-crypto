@@ -1,16 +1,16 @@
 import { CaretLeft, DotsThreeVertical } from '@phosphor-icons/react'
 import './styles.scss';
 
-export function Navbar() {
+export function Header({ title }) {
   return (
-    <navbar>
+    <header>
       <div className='arrow'>
         <CaretLeft size={32} weight='bold' />
       </div>
-      <h1>Bitcoin Wallet</h1>
+      <h1>{title}</h1>
       <div className='menu'>
         <DotsThreeVertical size={32} weight='bold' />
       </div>
-    </navbar>
+    </header>
   )
 }

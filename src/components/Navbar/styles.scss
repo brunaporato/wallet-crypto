@@ -1,0 +1,20 @@
+navbar {
+  background: white;
+  width: 100%;
+  padding: 4rem 2rem 1rem;
+  border-radius: 10px 10px 0 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: #4c5968;
+    font-size: 1.6rem;
+  }
+
+  div {
+    color: #aeb8c4;
+    cursor: pointer;
+  }
+}

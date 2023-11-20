@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'SFProDisplay-Bold';
+  src: local('SFProDisplay'), url(./fonts/SFProDisplay/SF-Pro-Display-Bold.OTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'SFProDisplay-SemiBold';
+  src: local('SFProDisplay'), url(./fonts/SFProDisplay/SF-Pro-Display-Semibold.otf) format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e5eaf1;
+  font-family: 'SFProDisplay-Semibold';
+
+  padding: 2rem;
+}

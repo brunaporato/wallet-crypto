@@ -1,0 +1,22 @@
+.chartcard-container {
+  background: white;
+  padding: 2rem;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 10px 0 rgba(154, 155, 176, 0.17);
+
+
+  .top {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0;
+    }
+
+    span {
+      color: #aeb8c4;
+      font-size: 1rem;
+    }
+  }
+}

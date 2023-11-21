@@ -3,12 +3,14 @@ import './styles.scss';
 import { useState } from 'react';
 import { ButtonCard } from '../ButtonCard';
 
-export function CryptoCard() {
+export function CryptoCard({ currency, ammountCrypto, dollar, percent }) {
   const [showBuySell, setShowBuySell] = useState(false);
 
   function handleShowBuySell() {
     setShowBuySell(!showBuySell)
   }
+
+  const ammountUSD = (ammountCrypto * dollar).toFixed(3);
 
   return (
     <div className="cryptocard-container">
@@ -17,15 +19,15 @@ export function CryptoCard() {
           <div className="icon">
             <CurrencyBtc size={32} weight='bold' />
           </div>
-          <h3>Bitcoin</h3>
+          <h3>{currency === 'btc' ? 'Bitcoin' : 'Crypto'}</h3>
         </div>
-        <span>BTC</span>
+        <span>{currency} </span>
       </section>
       <section className="content">
-        <h1>3.529020 BTC</h1>
-          <span>$19.153 USD</span>
+        <h1>{ammountCrypto} {currency}</h1>
+          <span>${ammountUSD} USD</span>
           <div className="percent">
-            - 2.32%
+            - {percent}%
           </div>
       </section>
       {showBuySell && (

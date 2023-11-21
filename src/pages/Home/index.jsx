@@ -34,13 +34,18 @@ export function Home() {
     }
   };
 
-  const btcToDollarToday = 5.643;
+  const btcToDollarToday = 5.4272;
 
   return (
     <div className='home-container'>
       <Header title='Bitcoin Wallet'/>
       <main>
-        <CryptoCard />
+        <CryptoCard
+          currency='btc'
+          ammountCrypto='3.529020'
+          dollar={btcToDollarToday}
+          percent={2.32}
+        />
         <section className='nav-charts'>
           <span
             onClick={() => handleTabClick('day')}

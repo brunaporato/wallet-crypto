@@ -2,8 +2,7 @@ import { DotOutline } from '@phosphor-icons/react/dist/ssr';
 import './styles.scss';
 import { Graph } from '../Graph';
 
-//TODO: terminar de estilizar :D
-
+// eslint-disable-next-line react/prop-types
 export function ChartCard({ num }) {
 
   return (
@@ -21,7 +20,7 @@ export function ChartCard({ num }) {
     <Graph num={num} />
     <footer>
       <div className="usd">
-        <DotOutline size={32} weight='fill' color='#ef2755'/>
+        <DotOutline size={32} weight='fill' color='#ffc843'/>
         <span>1 BTC: $4.894</span>
       </div>
     </footer>

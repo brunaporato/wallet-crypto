@@ -7,20 +7,22 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { data } from '../../utils/data';
+import './styles.scss';
 
+// eslint-disable-next-line react/prop-types
 export function Graph({ num }) {
   return (
-    <ResponsiveContainer width="100%" height={130}>
+    <ResponsiveContainer width="100%" height={130} className='graph'>
                 <AreaChart
                     width={600}
-                    height={200}
+                    height={600}
                     data={data.slice(0, num)}
                     syncId="anyId"
                     margin={{
                         top: 20,
-                        right: 0,
+                        right: 40,
                         left: -60,
-                        bottom: -19,
+                        bottom: -35,
                     }}
                 >
                     <XAxis axisLine={false} dataKey="name" tick={false} />

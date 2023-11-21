@@ -1,5 +1,5 @@
 import { ButtonCard } from '../../components/ButtonCard';
-import { CryptoCard } from '../../components/CyptoCard';
+import { CryptoCard } from '../../components/CryptoCard';
 import { ChartCard } from '../../components/ChartCard';
 import { Header } from '../../components/Header';
 import { useState } from 'react';

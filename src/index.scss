@@ -1,3 +1,11 @@
+@import './components/ButtonCard/styles.scss';
+@import './components/ChartCard/styles.scss';
+@import './components/CryptoCard/styles.scss';
+@import './components/DropdownMenu/styles.scss';
+@import './components/Graph/styles.scss';
+@import './components/Header/styles.scss';
+@import './components/Navbar/styles.scss';
+
 @font-face {
   font-family: 'SFProDisplay-Bold';
   src: local('SFProDisplay'), url(./fonts/SFProDisplay/SF-Pro-Display-Bold.OTF) format('truetype');

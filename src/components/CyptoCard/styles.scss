@@ -11,12 +11,12 @@
 
   box-shadow: 0 3px 10px 0 rgba(154, 155, 176, 0.17);
 
-  span {
+  > span, .top span, .content span {
     color: #aeb8c4;
     text-transform: uppercase;
   }
 
-  button {
+  > button {
     background: none;
     border: none;
     width: 100%;
@@ -45,8 +45,6 @@
     gap: 2rem;
     color: #4c5968;
   }
-  
-  
 
   .icon {
     background: linear-gradient(180deg, rgba(255, 200, 67, 1) 0% , rgba(255, 143, 23, 1) 100%);
@@ -76,7 +74,7 @@
     grid-area: amount;
   }
 
-  span {
+  > span {
     font-size: 1.25rem;
     grid-area: crypto;
   }
@@ -96,4 +94,10 @@
     color: white;
   }
 
+}
+
+.buy-sell {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0.5rem 1rem;
 }

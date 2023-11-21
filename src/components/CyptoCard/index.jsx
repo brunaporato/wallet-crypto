@@ -1,6 +1,7 @@
 import { CurrencyBtc, CaretDown } from '@phosphor-icons/react';
 import './styles.scss';
 import { useState } from 'react';
+import { ButtonCard } from '../ButtonCard';
 
 export function CryptoCard() {
   const [showBuySell, setShowBuySell] = useState(false);
@@ -27,6 +28,12 @@ export function CryptoCard() {
             - 2.32%
           </div>
       </section>
+      {showBuySell && (
+        <section className='buy-sell'>
+          <ButtonCard variant='buy' />
+          <ButtonCard variant='sell' />
+        </section>
+      )}
       <button onClick={handleShowBuySell}>
         <CaretDown
           size={50}

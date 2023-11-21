@@ -34,6 +34,8 @@ export function Home() {
     }
   };
 
+  const btcToDollarToday = 5.643;
+
   return (
     <div className='home-container'>
       <Header title='Bitcoin Wallet'/>
@@ -65,7 +67,7 @@ export function Home() {
             Year
           </span>
         </section>
-        <ChartCard num={num} />
+        <ChartCard num={num} dollar={btcToDollarToday} />
         <div className="buttons">
           <ButtonCard variant='buy' />
           <ButtonCard variant='sell' />

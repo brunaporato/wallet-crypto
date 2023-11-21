@@ -14,7 +14,7 @@ export const data = [
   {
     name: 'BTC',
     uv: 2000,
-    USD: 4300,
+    USD: 3300,
     amt: 2290,
   },
   {

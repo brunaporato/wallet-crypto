@@ -1,0 +1,44 @@
+.dropdown-container {
+  background: white;
+  width: fit-content;
+  border-radius: 20px;
+
+  position: absolute;
+  right: 2rem;
+  top: 6rem;
+
+  z-index: 1;
+
+
+  ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-bottom: 1px solid #aeb8c4;
+
+    padding: 1rem 1.5rem;
+
+    transition: background .3s;
+
+    &:hover {
+      background: #eef2f7;
+    }
+  }
+
+  li:first-child {
+    border-radius: 20px 20px 0 0;
+  }
+
+  li:last-child {
+    border: 0;
+    border-radius: 0 0 20px 20px;
+    color: #ee225d;
+  }
+}

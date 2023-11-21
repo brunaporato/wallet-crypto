@@ -9,7 +9,6 @@ import {
 import { data } from '../../utils/data';
 import './styles.scss';
 
-// eslint-disable-next-line react/prop-types
 export function Graph({ num }) {
   return (
     <ResponsiveContainer width="100%" height={130} className='graph'>

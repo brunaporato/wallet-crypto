@@ -2,7 +2,7 @@ export const data = [
   {
     name: 'BTC',
     uv: 4000,
-    USD: 4000,
+    USD: 4600,
     amt: 2400,
   },
   {
@@ -14,13 +14,13 @@ export const data = [
   {
     name: 'BTC',
     uv: 2000,
-    USD: 3300,
+    USD: 4560,
     amt: 2290,
   },
   {
     name: 'BTC',
     uv: 2780,
-    USD: 5908,
+    USD: 4908,
     amt: 2000,
   },
   {
@@ -32,13 +32,13 @@ export const data = [
   {
     name: 'BTC',
     uv: 2390,
-    USD: 6800,
+    USD: 3908,
     amt: 2500,
   },
   {
     name: 'BTC',
     uv: 3490,
-    USD: 6500,
+    USD: 4500,
     amt: 2100,
   },
   {

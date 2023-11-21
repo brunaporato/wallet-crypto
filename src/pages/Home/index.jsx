@@ -5,12 +5,18 @@ import { Header } from '../../components/Header';
 import { useState } from 'react';
 import './styles.scss';
 import { Navbar } from '../../components/Navbar';
+import { DropdownMenu } from '../../components/DropdownMenu';
 
 export function Home() {
   const [num, setNum] = useState(4);
   const [activeTab, setActiveTab] = useState('day');
+  const [menuVisible, setMenuVisible] = useState(false);
 
-  const handleTabClick = (tab) => {
+  function toggleMenu() {
+    setMenuVisible(!menuVisible);
+  }
+
+  function handleTabClick(tab) {
     setActiveTab(tab);
     switch(tab) {
       case 'day': {
@@ -33,13 +39,14 @@ export function Home() {
         setNum(4);
       }
     }
-  };
+  }
 
   const btcToDollarToday = 5.4272;
 
   return (
     <div className='home-container'>
-      <Header title='Bitcoin Wallet'/>
+      <Header title='Bitcoin Wallet' toggleMenu={toggleMenu}/>
+      
       <main>
         <CryptoCard
           currency='btc'
@@ -80,6 +87,8 @@ export function Home() {
         </div>
       </main>
       <Navbar />
+      {menuVisible && <div className="overlay" onClick={toggleMenu}></div>}
+      {menuVisible && <DropdownMenu />}
     </div>
   )
 }

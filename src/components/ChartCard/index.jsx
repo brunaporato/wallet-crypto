@@ -1,12 +1,10 @@
 import { DotOutline } from '@phosphor-icons/react/dist/ssr';
 import './styles.scss';
 import { Graph } from '../Graph';
-import { useState } from 'react';
 
 //TODO: terminar de estilizar :D
 
-export function ChartCard() {
-  const [num, setNum] = useState(4);
+export function ChartCard({ num }) {
 
   return (
    <div className="chartcard-container">

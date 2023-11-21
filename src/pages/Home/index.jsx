@@ -2,7 +2,7 @@ import { ButtonCard } from '../../components/ButtonCard';
 import { CryptoCard } from '../../components/CryptoCard';
 import { ChartCard } from '../../components/ChartCard';
 import { Header } from '../../components/Header';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles.scss';
 import { Navbar } from '../../components/Navbar';
 import { DropdownMenu } from '../../components/DropdownMenu';
@@ -42,6 +42,14 @@ export function Home() {
   }
 
   const btcToDollarToday = 5.4272;
+
+  useEffect(() => {
+    document.body.style.overflow = menuVisible ? 'hidden' : 'auto';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+  }, [menuVisible])
 
   return (
     <div className='home-container'>

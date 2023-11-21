@@ -4,6 +4,7 @@ import { ChartCard } from '../../components/ChartCard';
 import { Header } from '../../components/Header';
 import { useState } from 'react';
 import './styles.scss';
+import { Navbar } from '../../components/Navbar';
 
 export function Home() {
   const [num, setNum] = useState(4);
@@ -78,6 +79,7 @@ export function Home() {
           <ButtonCard variant='sell' />
         </div>
       </main>
+      <Navbar />
     </div>
   )
 }

@@ -14,6 +14,7 @@ export function Home() {
 
   function toggleMenu() {
     setMenuVisible(!menuVisible);
+    window.scrollTo(0, 0);
   }
 
   function handleTabClick(tab) {

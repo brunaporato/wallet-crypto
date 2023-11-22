@@ -103,6 +103,14 @@
   padding: 2rem 0.5rem 1rem;
 }
 
+.arrow-down {
+  transition: filter .3s;
+  
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
+
 @media (max-width: 420px) {
   .content {
     h1 {

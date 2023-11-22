@@ -36,7 +36,7 @@ export function CryptoCard({ currency, ammountCrypto, dollar, percent }) {
           <ButtonCard variant='sell' />
         </section>
       )}
-      <button onClick={handleShowBuySell}>
+      <button onClick={handleShowBuySell} className='arrow-down'>
         <CaretDown
           size={50}
           weight="bold"

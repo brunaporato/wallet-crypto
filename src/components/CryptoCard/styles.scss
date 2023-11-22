@@ -104,7 +104,29 @@
 }
 
 @media (max-width: 420px) {
+  .content {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    span {
+      font-size: 0.75rem;
+    }
+  }
+  
   .buy-sell {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  .cryptocard-container {
+    padding: 1rem 1rem 0.2rem;
+
+    .top {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem;
+    }
   }
 }

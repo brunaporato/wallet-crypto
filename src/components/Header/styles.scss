@@ -10,7 +10,7 @@ header {
 
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 85vw;
   max-width: 500px;
 
   flex-wrap: 0;
@@ -21,6 +21,7 @@ header {
   h1 {
     color: #4c5968;
     font-size: 1.6rem;
+    flex-shrink: 0;
   }
 
   div {
